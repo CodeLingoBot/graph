@@ -23,6 +23,7 @@ import (
 
 /*
 Convert the literal value of a scanned token to rune
+*/Convert the literal value of a scanned token to rune
 */
 func RuneValue(lit []byte) rune {
 	if lit[1] == '\\' {
@@ -37,6 +38,7 @@ func RuneValue(lit []byte) rune {
 
 /*
 Convert the literal value of a scanned token to int64
+*/Convert the literal value of a scanned token to int64
 */
 func IntValue(lit []byte) (int64, error) {
 	return strconv.ParseInt(string(lit), 10, 64)
@@ -44,6 +46,7 @@ func IntValue(lit []byte) (int64, error) {
 
 /*
 Convert the literal value of a scanned token to uint64
+*/Convert the literal value of a scanned token to uint64
 */
 func UintValue(lit []byte) (uint64, error) {
 	return strconv.ParseUint(string(lit), 10, 64)
